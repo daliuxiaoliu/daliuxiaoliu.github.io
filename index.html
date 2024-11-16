@@ -1,1 +1,74 @@
-index
+<!DOCTYPE html>
+<html>
+<head>
+	<mata charset='utf-8'>
+	<title> JCBLOG </title>
+    <link rel="stylesheet" href="/main.css" rel="stylesheet">
+</head>
+<body>
+	<a href="/" id="nav_b1">
+		<div class="nav" id="nav_1">
+			<img src="./icon1.png" style="height:16px; top:8px; left:8px">
+			<p style="top:-30px; left: 32px"> LTYSERVER </p>
+			<div class="nav_underline" id="udl_1"></div>
+		</div>
+	</a>
+	<div class="block_big">
+		<a href="/20241106.html">20241106</a>
+	</div>
+	<script>
+		var onmouse1;
+		var width1 = 0;
+		function over1() {
+			onmouse1 = true;
+        }
+		function out1() {
+            onmouse1 = false;
+        }
+        var nav1 = document.getElementById("nav_1");
+        var udl1 = document.getElementById("udl_1");
+        nav1.onmouseover = over1;
+        nav1.onmouseout = out1;
+        setInterval(function() {
+        	if (onmouse1) {
+        		width1 += width1 * 0.1 + 10;
+        	}
+        	else {
+        		width1 -= width1 * 0.1 + 10;
+        	}
+        	if (width1 < 0) width1 = 0;
+        	if (width1 > 128) width1 = 128;
+        	udl1.style = "top: -80px; background: rgb(150, 150, 150); height: 2px; width: " + width1 + "px";
+        	// udl1.width = width1;
+        	console.log(width1);
+        }, 20);
+	</script>
+	<script>
+		var onmouse2;
+		var width2 = 0;
+		function over2() {
+			onmouse2 = true;
+        }
+		function out2() {
+            onmouse2 = false;
+        }
+        var nav2 = document.getElementById("nav_2");
+        var udl2 = document.getElementById("udl_2");
+        nav2.onmouseover = over2;
+        nav2.onmouseout = out2;
+        setInterval(function() {
+        	if (onmouse2) {
+        		width2 += width2 * 0.1 + 10;
+        	}
+        	else {
+        		width2 -= width2 * 0.1 + 10;
+        	}
+        	if (width2 < 0) width2 = 0;
+        	if (width2 > 128) width2 = 128;
+        	udl2.style = "top: -80px; background: rgb(150, 150, 150); height: 2px; width: " + width2 + "px";
+        	// udl1.width = width1;
+        	console.log(width2);
+        }, 20);
+	</script>
+</body>
+</html>

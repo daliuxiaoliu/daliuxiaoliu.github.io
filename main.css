@@ -1,0 +1,100 @@
+@font-face {
+	font-family: "Minecraft";
+	src: url("./Minecraft.otf");
+}
+
+.bigmc {
+	top: 30px;
+	text-align: center;
+	font-family: "Minecraft";
+	font-size: 60px;
+}
+
+html {
+	background: rgb(50, 50, 50);
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+	color: rgb(200, 200, 200);
+	text-decoration: none;
+}
+
+* {
+	position: relative; 
+	/*absolute
+	fixed*/
+}
+.nav {
+	position: relative; 
+	background: none;
+	border-radius: 8px;
+    transition-property: background;
+    transition-duration: 0.3s;
+	height: 38px;
+	width: 128px;
+}
+
+.nav:hover {
+	background: rgb(75, 75, 75);
+}
+
+.block_little {
+	position: relative;
+	top: 30px;
+	left: 30px;
+	box-shadow: 0px 0px 5px 2px;
+	height: 300px;
+	width: 30%;
+	background: rgb(75, 75, 75);
+	border-radius: 5px;
+    transition-property: background;
+    transition-duration: 0.3s;
+}
+
+.block_big {
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	box-shadow: 0px 0px 5px 2px;
+	height: 700px;
+	width: 95%;
+	background: rgb(75, 75, 75);
+	border-radius: 5px;
+    transition-property: background;
+    transition-duration: 0.3s;
+}
+
+.block_big:hover {
+	background: rgb(80, 80, 80);
+}
+
+.block_little:hover {
+	background: rgb(80, 80, 80);
+}
+
+#nav_b1 {
+	width: 130px;
+	height: 40px;
+}
+
+#nav_b2 {
+	width: 130px;
+	height: 40px;
+	top: -38px;
+	left: 150px;
+}
+
+.tool_name {
+	top: 10px;
+	left: 10px;
+}
+
+.tool_text {
+	top: 10px;
+	left: 74px;
+}
+
+.tool_image {
+	top: 10px;
+	left: 10px;
+}
